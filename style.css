@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+@keyframes listenTextEffect {
+  0% {
+    transform: translateX(0px);
+  }
+  40% {
+    transform: translateX(-24px);
+  }
+  50% {
+    transform: translateX(-24px);
+  }
+  90% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+* {
+  font-family: "Red Hat Display";
+  font-size: 1.0925rem;
+  color: #f4f4f4;
+  margin: 0;
+  border: 0px solid rgba(128, 128, 128, 0);
+}
+
+:root {
+  --button-shadow: #b5b5b5;
+}
+
+body {
+  background-image: url(./src/recteezy_night-sky-with-stars-sparkling-on-black-background_6263922.png);
+}
+
+button {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  outline: transparent;
+  border: transparent;
+  cursor: pointer;
+  color: #2b272b;
+  background-color: #f4f4f4;
+  font-weight: 900;
+  -webkit-box-shadow: 0px 4px 0px 1px var(--button-shadow);
+  -moz-box-shadow: 0px 4px 0px 1px var(--button-shadow);
+  box-shadow: 0px 4px 0px 1px var(--button-shadow);
+  transition: all ease 0.15s;
+}
+
+button:hover {
+  -webkit-box-shadow: 0px 0px 0px 1px var(--button-shadow);
+  -moz-box-shadow: 0px 0px 0px 1px var(--button-shadow);
+  box-shadow: 0px 0px 0px 1px var(--button-shadow);
+  transform: translateY(4px);
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.482rem;
+  height: 3.275rem;
+  margin-top: 2.12rem;
+}
+
+h1 {
+  letter-spacing: 0.924rem;
+  font-weight: 900;
+}
+
+.logoApp {
+  object-fit: scale-down;
+  cursor: pointer;
+  height: 100%;
+}
+
+.instagram,
+.youtube {
+  position: relative;
+  height: 80%;
+  transition: all ease 0.15s;
+}
+
+.instagram:hover,
+.youtube:hover {
+  transform: translateX(1px) translateY(3px);
+}
+
+.listenButton {
+  height: 100%;
+  width: 12.319rem;
+  border-radius: 0.665rem;
+  padding-inline: 0.95rem;
+}
+
+.listenButton p {
+  color: #2b272b;
+}
+
+.listenButton .logoApp {
+  width: 1.976rem;
+}
+
+.listenTextBox {
+  overflow: hidden;
+  width: 7rem;
+  height: 1.4rem;
+  position: relative;
+}
+
+.listenTextBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgb(244, 244, 244);
+  background: linear-gradient(
+    90deg,
+    rgb(244, 244, 244, 1) 0%,
+    rgba(255, 255, 255, 0) 8%,
+    rgba(255, 255, 255, 0) 92%,
+    rgba(244, 244, 244, 1) 100%
+  );
+}
+
+.listenText {
+  animation: listenTextEffect 10s infinite linear;
+  animation-delay: 1s;
+  text-wrap: nowrap;
+  padding-inline: 4px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+  min-height: 800px;
+  height: 89vh;
+}
+
+.donationSpot,
+.logoSpot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonList {
+  width: 19.95rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.665rem;
+}
+
+.buttonList h2 {
+  margin-bottom: 0.475rem;
+  margin-top: 0.775rem;
+  letter-spacing: 0.38rem;
+}
+
+.tipButton,
+.subButton {
+  width: 100%;
+  height: 3.42rem;
+  letter-spacing: 0.152rem;
+  font-size: 1.71rem;
+  border-radius: 0.779rem;
+}
+
+.subButton {
+  padding-right: 5.7rem;
+}
+
+button .mensual {
+  color: #2b272b;
+  font-weight: 900;
+  font-size: 0.855rem;
+  position: absolute;
+  right: 3.8rem;
+  letter-spacing: 0.095rem;
+}
+
+.logoSpot img {
+  width: 41rem;
+}
+
+.smallButtons {
+  align-self: flex-start;
+  display: flex;
+  margin-top: 0.95rem;
+  gap: 0.475rem;
+}
+
+.smallButtons button {
+  height: 3.42rem;
+  width: 3.42rem;
+  border-radius: 0.855rem;
+  position: relative;
+  display: inline;
+}
+
+.smallButtons button img {
+  height: 60%;
+}
+
+.smallButtons button img {
+  position: relative;
+  top: 2px;
+  right: 1px;
+}
+
+a {
+  text-decoration: none;
+  background: none;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  height: 100%;
+}
